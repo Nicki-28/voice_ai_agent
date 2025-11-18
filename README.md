@@ -1,4 +1,4 @@
-# Voice AI Agent
+# Voice AI Agent 🤖
 
 This project is an **experimental intelligent voice agent** that allows users to interact with a personal assistant called *Jarvis* via voice (can you tell i'm a marvel fan? ahah). The agent converts speech to text, processes the request through an AI backend, and responds using Text-to-Speech.
 
@@ -30,14 +30,16 @@ This project is an **experimental intelligent voice agent** that allows users to
 - JSON for data exchange
 
 ---
- -> To use the agent, clone the repository (`git clone https://github.com/Nicki-28/voice_ai_agent.git`)
- ->install dependencies (`pip install -r requirements.txt`), and run it with Docker (`docker compose up`). 
+- To use the agent, clone the repository (`git clone https://github.com/Nicki-28/voice_ai_agent.git`)
+- install dependencies (`pip install -r requirements.txt`), and run it with Docker (`docker compose up`). 
  
 ---
-## Testing
- Speak to the agent using the wake word, for example: "Hey Jarvis, what is the most famous singer in the world?" and it will respond in real-time, adapting to your personality, using silences to detect when you finish speaking, and maintaining conversation context. 
+## 🔹 Technologies
+
+Speak to the agent using the wake word, for example: "Hey Jarvis, what is the most famous singer in the world?" and it will respond in real-time, adapting to your personality, using silences to detec when you finish speaking, and maintaining conversation context.
+
  ---
- ## Improvements
+## 🔹 Improvements
  Potential improvements include support for multiple wake words, advanced memory and context handling, external TTS voices, optimizing response time, and adding a proper frontend interface.
 
 
