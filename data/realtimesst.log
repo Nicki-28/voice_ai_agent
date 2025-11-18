@@ -1,0 +1,1112 @@
+2025-11-17 17:28:36.735 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2025-11-17 17:28:36.752 - RealTimeSTT: realtimestt - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-11-17 17:28:36.763 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-11-17 17:28:36.764 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-11-17 17:28:37.841 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-11-17 17:28:37.841 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2025-11-17 17:28:37.841 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2025-11-17 17:28:42.587 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2025-11-17 17:28:42.588 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2025-11-17 17:28:42.588 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:28:42.588 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:28:42.589 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:28:43.395 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:28:43.395 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:28:43.395 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:28:43.396 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:28:54.791 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:28:54.802 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 198656
+2025-11-17 17:28:54.802 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:28:54.888 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:28:54.889 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:28:54.907 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.007 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.108 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.210 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.311 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.412 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.513 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.614 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.716 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.817 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:55.865 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:28:55.915 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.03 seconds
+2025-11-17 17:28:55.915 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:28:55.916 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:28:55.917 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:28:56.066 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:28:56.066 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:28:56.066 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:28:56.066 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:28:58.503 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:28:58.506 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 55296
+2025-11-17 17:28:58.506 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:28:58.540 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:28:58.541 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:28:58.565 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:58.666 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:58.767 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:58.868 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:58.969 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:59.070 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:59.171 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:59.271 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:28:59.329 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:28:59.351 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.81 seconds
+2025-11-17 17:28:59.351 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:28:59.351 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:28:59.352 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:28:59.458 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:28:59.458 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:28:59.458 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:28:59.458 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:01.061 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:01.063 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 41984
+2025-11-17 17:29:01.063 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:01.129 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:01.130 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:01.131 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.233 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.333 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.434 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.535 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.637 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.737 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.838 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:01.924 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:01.967 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.84 seconds
+2025-11-17 17:29:01.968 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:01.968 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:01.968 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:02.786 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:02.786 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:02.786 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:02.787 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:04.258 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:04.259 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 39936
+2025-11-17 17:29:04.259 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:04.361 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:04.362 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:04.369 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:04.470 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:04.572 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:04.672 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:04.773 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:04.874 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:04.975 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:05.075 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:05.143 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:05.191 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.83 seconds
+2025-11-17 17:29:05.191 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:05.191 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:05.192 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:07.015 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:07.015 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:07.015 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:07.015 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:09.446 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:09.448 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 55296
+2025-11-17 17:29:09.449 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:09.478 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:09.479 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:09.485 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:09.586 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:09.687 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:09.787 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:09.889 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:09.990 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:10.090 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:10.191 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:10.260 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:10.280 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.80 seconds
+2025-11-17 17:29:10.281 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:10.281 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:10.281 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:10.657 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:10.657 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:10.658 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:10.658 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:11.815 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:11.817 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 34816
+2025-11-17 17:29:11.817 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:11.906 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:11.907 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:11.917 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.017 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.119 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.220 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.320 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.421 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.522 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.623 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:12.675 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:12.696 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.79 seconds
+2025-11-17 17:29:12.697 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:12.697 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:12.698 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:13.671 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:13.672 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:13.672 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:13.672 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:18.212 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:18.215 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 89088
+2025-11-17 17:29:18.216 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:18.233 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:18.234 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:18.260 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:18.360 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:18.462 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:18.563 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:18.664 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:18.764 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:18.865 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:18.966 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:19.067 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:19.113 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:19.122 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.89 seconds
+2025-11-17 17:29:19.122 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:19.122 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:19.123 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:19.297 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:19.297 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:19.297 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:19.297 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:21.606 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:21.608 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 53248
+2025-11-17 17:29:21.608 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:21.633 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:21.634 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:21.658 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:21.760 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:21.860 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:21.962 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:22.062 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:22.163 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:22.264 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:22.364 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:22.465 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:22.565 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:22.568 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:22.575 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.94 seconds
+2025-11-17 17:29:22.575 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:22.575 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:22.576 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:23.266 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:23.266 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:23.266 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:23.267 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:29.285 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:29.288 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 112640
+2025-11-17 17:29:29.288 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:29.341 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:29.342 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:29.360 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:29.461 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:29.563 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:29.664 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:29.765 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:29.866 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:29.966 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:30.067 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:30.168 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:30.240 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:30.255 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.91 seconds
+2025-11-17 17:29:30.255 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:30.255 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:30.256 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:30.499 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:30.499 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:30.499 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:30.500 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:34.021 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:34.024 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 72704
+2025-11-17 17:29:34.024 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:34.109 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:34.110 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:34.112 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.213 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.314 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.415 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.516 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.617 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.719 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.820 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:34.921 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:35.022 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:35.028 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:35.048 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.94 seconds
+2025-11-17 17:29:35.048 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:35.048 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:35.049 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:35.299 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:35.299 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:35.299 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:35.299 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:40.997 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:40.999 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 107520
+2025-11-17 17:29:40.999 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:41.037 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:41.037 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:41.040 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.140 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.241 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.342 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.443 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.545 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.645 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.746 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.847 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:41.948 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:42.049 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:42.150 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:42.201 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:42.232 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.19 seconds
+2025-11-17 17:29:42.232 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:42.233 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:42.234 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:42.402 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:42.402 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:42.402 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:42.402 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:49.059 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:49.061 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 122880
+2025-11-17 17:29:49.062 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:49.151 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:49.151 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:49.158 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.259 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.360 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.462 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.563 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.664 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.765 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.867 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:49.969 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:50.069 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:50.170 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:50.271 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:50.274 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:50.319 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.17 seconds
+2025-11-17 17:29:50.320 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:50.320 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:50.321 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:50.530 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:50.531 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:50.531 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:50.531 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:29:53.476 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:29:53.477 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 63488
+2025-11-17 17:29:53.477 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:29:53.558 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:29:53.559 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:29:53.572 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:53.672 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:53.772 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:53.873 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:53.974 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:54.074 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:54.175 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:54.276 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:54.376 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:54.477 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:29:54.541 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:29:54.590 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.03 seconds
+2025-11-17 17:29:54.590 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:29:54.590 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:29:54.591 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:29:55.012 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:29:55.012 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:29:55.012 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:29:55.012 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:30:01.030 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:30:01.033 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 112640
+2025-11-17 17:30:01.033 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:30:01.037 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:30:01.038 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:30:01.045 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.146 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.247 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.348 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.450 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.550 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.651 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.753 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.853 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:30:01.923 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:30:01.976 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.94 seconds
+2025-11-17 17:30:01.977 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:30:01.977 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:30:01.977 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:52:19.666 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2025-11-17 17:52:19.684 - RealTimeSTT: realtimestt - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-11-17 17:52:19.694 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-11-17 17:52:19.696 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-11-17 17:52:20.457 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-11-17 17:52:20.457 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2025-11-17 17:52:20.457 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2025-11-17 17:52:25.061 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2025-11-17 17:52:25.062 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2025-11-17 17:52:25.062 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:52:25.062 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:52:25.063 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:52:26.063 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:52:26.063 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:52:26.063 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:52:26.064 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:52:27.473 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:52:27.475 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 38912
+2025-11-17 17:52:27.475 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:52:27.527 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:52:27.528 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:52:27.535 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:27.635 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:27.736 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:27.837 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:27.938 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:28.039 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:28.140 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:28.241 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:28.291 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:52:28.336 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.81 seconds
+2025-11-17 17:52:28.336 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:52:28.336 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:52:28.337 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:52:28.495 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:52:28.495 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:52:28.495 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:52:28.495 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:52:33.170 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:52:33.174 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 91136
+2025-11-17 17:52:33.174 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:52:33.215 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:52:33.216 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:52:33.219 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:33.320 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:33.420 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:33.521 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:33.622 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:33.723 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:33.823 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:33.924 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:34.026 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:34.126 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:34.130 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:52:34.162 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.95 seconds
+2025-11-17 17:52:34.162 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:52:34.162 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:52:34.163 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:52:34.385 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:52:34.385 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:52:34.385 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:52:34.385 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:52:47.183 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:52:47.189 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 221184
+2025-11-17 17:52:47.189 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:52:47.212 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:52:47.213 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:52:47.231 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:47.332 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:47.432 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:47.533 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:47.634 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:47.735 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:47.837 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:47.938 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:48.039 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:48.140 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:48.241 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:48.341 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:48.366 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:52:48.410 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.20 seconds
+2025-11-17 17:52:48.410 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:52:48.410 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:52:48.410 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:52:49.744 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:52:49.744 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:52:49.744 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:52:49.745 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:52:50.897 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:52:50.899 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 34816
+2025-11-17 17:52:50.899 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:52:50.960 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:52:50.961 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:52:50.982 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.083 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.183 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.285 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.386 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.487 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.588 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.689 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:52:51.740 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:52:51.768 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.81 seconds
+2025-11-17 17:52:51.769 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:52:51.769 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:52:51.769 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:52:53.905 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:52:53.905 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:52:53.905 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:52:53.905 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:53:02.737 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:53:02.741 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 157696
+2025-11-17 17:53:02.741 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:53:02.810 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:53:02.811 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:53:02.836 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:02.937 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.038 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.139 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.240 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.341 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.442 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.543 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.643 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.745 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:03.803 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:53:03.856 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.04 seconds
+2025-11-17 17:53:03.857 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:53:03.857 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:53:03.857 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:53:04.977 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:53:04.977 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:53:04.977 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:53:04.978 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:53:12.977 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:53:12.981 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 144384
+2025-11-17 17:53:12.981 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:53:12.989 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:53:12.990 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:53:12.993 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.094 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.195 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.296 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.397 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.498 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.599 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.701 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.802 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:13.904 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:14.005 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:53:14.069 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:53:14.074 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.08 seconds
+2025-11-17 17:53:14.074 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:53:14.074 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:53:14.075 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:53:14.476 - RealTimeSTT: realtimestt - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-11-17 17:53:14.476 - RealTimeSTT: realtimestt - DEBUG - Finishing recording thread
+2025-11-17 17:53:14.478 - RealTimeSTT: realtimestt - DEBUG - Terminating reader process
+2025-11-17 17:53:15.342 - RealTimeSTT: realtimestt - DEBUG - Terminating transcription process
+2025-11-17 17:53:15.345 - RealTimeSTT: realtimestt - DEBUG - Finishing realtime thread
+2025-11-17 17:53:15.425 - RealTimeSTT: realtimestt - INFO - KeyboardInterrupt in text() method
+2025-11-17 17:54:13.716 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2025-11-17 17:54:13.732 - RealTimeSTT: realtimestt - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-11-17 17:54:13.742 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-11-17 17:54:13.744 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-11-17 17:54:14.501 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-11-17 17:54:14.501 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2025-11-17 17:54:14.501 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2025-11-17 17:54:19.010 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2025-11-17 17:54:19.011 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2025-11-17 17:54:19.011 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:54:19.012 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:54:19.013 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:54:21.029 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:54:21.029 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:54:21.029 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:54:21.029 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:54:23.589 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:54:23.591 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 57344
+2025-11-17 17:54:23.591 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:54:23.596 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:54:23.596 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:54:23.610 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:23.711 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:23.811 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:23.912 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:24.012 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:24.113 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:24.214 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:24.316 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:24.407 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:54:24.429 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.83 seconds
+2025-11-17 17:54:24.429 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:54:24.429 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:54:24.430 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:54:24.872 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:54:24.872 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:54:24.872 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:54:24.872 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:54:32.740 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:54:32.744 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 142336
+2025-11-17 17:54:32.744 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:54:32.794 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:54:32.795 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:54:32.798 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:32.919 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.020 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.122 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.222 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.324 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.424 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.524 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.626 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.727 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.828 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:33.929 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:34.025 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:54:34.053 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.26 seconds
+2025-11-17 17:54:34.054 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:54:34.054 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:54:34.054 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:54:34.339 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:54:34.339 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:54:34.339 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:54:34.339 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:54:36.455 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:54:36.456 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 50176
+2025-11-17 17:54:36.456 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:54:36.459 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:54:36.460 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:54:36.472 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:36.573 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:36.674 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:36.775 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:36.876 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:36.977 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.077 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.179 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.280 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.381 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.482 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.583 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.683 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:37.765 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:54:37.778 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.32 seconds
+2025-11-17 17:54:37.779 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:54:37.779 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:54:37.779 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:54:39.015 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:54:39.015 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:54:39.015 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:54:39.015 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:54:48.422 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:54:48.427 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 166912
+2025-11-17 17:54:48.427 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:54:48.445 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:54:48.446 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:54:48.468 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:48.568 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:48.669 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:48.770 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:48.871 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:48.973 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:49.073 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:49.174 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:49.275 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:49.376 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:49.477 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:49.578 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:54:49.622 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:54:49.650 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.20 seconds
+2025-11-17 17:54:49.651 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:54:49.651 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:54:49.651 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:54:50.467 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:54:50.467 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:54:50.467 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:54:50.467 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:55:10.629 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:55:10.637 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 338944
+2025-11-17 17:55:10.638 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:55:10.711 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:55:10.712 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:55:10.727 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:10.827 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:10.928 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.029 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.130 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.231 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.332 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.434 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.534 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.636 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.738 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.838 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:11.943 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:12.043 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:12.059 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:55:12.075 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.36 seconds
+2025-11-17 17:55:12.075 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:55:12.075 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:55:12.076 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:55:13.253 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:55:13.253 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:55:13.253 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:55:13.253 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:55:14.917 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:55:14.918 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 43008
+2025-11-17 17:55:14.919 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:55:15.008 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:55:15.009 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:55:15.011 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.112 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.213 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.314 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.416 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.517 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.618 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.718 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:15.801 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:55:15.812 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.80 seconds
+2025-11-17 17:55:15.812 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:55:15.812 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:55:15.813 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:55:16.258 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:55:16.258 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:55:16.258 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:55:16.259 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:55:26.178 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:55:26.182 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 175104
+2025-11-17 17:55:26.182 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:55:26.189 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:55:26.190 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:55:26.193 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:26.294 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:26.395 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:26.496 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:26.597 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:26.698 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:26.799 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:26.901 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:27.001 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:27.102 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:27.203 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:27.304 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:27.318 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:55:27.344 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.15 seconds
+2025-11-17 17:55:27.345 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:55:27.345 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:55:27.346 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:55:28.609 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:55:28.609 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:55:28.609 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:55:28.609 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:55:35.462 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 17:55:35.465 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 125952
+2025-11-17 17:55:35.465 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 17:55:35.548 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 17:55:35.549 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 17:55:35.556 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:35.657 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:35.758 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:35.860 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:35.961 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:36.061 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:36.162 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:36.262 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:36.363 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:36.463 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 17:55:36.465 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 17:55:36.490 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.94 seconds
+2025-11-17 17:55:36.490 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 17:55:36.490 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 17:55:36.491 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 17:55:37.057 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 17:55:37.057 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 17:55:37.057 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 17:55:37.057 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 17:55:43.466 - RealTimeSTT: realtimestt - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-11-17 17:55:43.466 - RealTimeSTT: realtimestt - DEBUG - Receive from stdout pipe
+2025-11-17 17:55:43.466 - RealTimeSTT: realtimestt - DEBUG - Finishing recording thread
+2025-11-17 17:55:43.467 - RealTimeSTT: realtimestt - INFO - None
+2025-11-17 17:55:43.472 - RealTimeSTT: realtimestt - DEBUG - Terminating reader process
+2025-11-17 17:55:44.200 - RealTimeSTT: realtimestt - DEBUG - Terminating transcription process
+2025-11-17 17:55:44.201 - RealTimeSTT: realtimestt - DEBUG - Finishing realtime thread
+2025-11-17 17:55:44.277 - RealTimeSTT: realtimestt - INFO - KeyboardInterrupt in text() method
+2025-11-17 22:00:37.756 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2025-11-17 22:00:37.773 - RealTimeSTT: realtimestt - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-11-17 22:00:37.786 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-11-17 22:00:37.787 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-11-17 22:00:38.994 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-11-17 22:00:38.994 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2025-11-17 22:00:38.994 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2025-11-17 22:00:43.529 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2025-11-17 22:00:43.530 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2025-11-17 22:00:43.530 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:00:43.530 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:00:43.531 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:00:45.368 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:00:45.368 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:00:45.368 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:00:45.368 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:00:46.521 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:00:46.523 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 34816
+2025-11-17 22:00:46.524 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:00:46.620 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:00:46.621 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:00:46.623 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:46.723 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:46.824 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:46.925 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:47.027 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:47.147 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:47.248 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:47.350 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:47.450 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:47.457 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:00:47.487 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.87 seconds
+2025-11-17 22:00:47.487 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:00:47.487 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:00:47.487 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:00:48.759 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:00:48.760 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:00:48.760 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:00:48.760 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:00:50.165 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:00:50.166 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 38912
+2025-11-17 22:00:50.166 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:00:50.249 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:00:50.251 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:00:50.253 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:50.354 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:50.455 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:50.556 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:50.657 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:50.758 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:50.858 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:50.959 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:51.056 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:00:51.089 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.84 seconds
+2025-11-17 22:00:51.089 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:00:51.089 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:00:51.090 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:00:51.380 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:00:51.380 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:00:51.380 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:00:51.380 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:00:52.791 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:00:52.793 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 38912
+2025-11-17 22:00:52.793 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:00:52.836 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:00:52.837 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:00:52.839 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:52.939 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.041 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.142 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.242 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.343 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.444 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.544 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.645 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:53.654 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:00:53.669 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.83 seconds
+2025-11-17 22:00:53.670 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:00:53.670 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:00:53.670 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:00:54.007 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:00:54.007 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:00:54.007 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:00:54.007 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:00:56.499 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:00:56.500 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 56320
+2025-11-17 22:00:56.501 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:00:56.590 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:00:56.591 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:00:56.594 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:56.694 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:56.795 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:56.897 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:56.998 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:57.099 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:57.201 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:57.302 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:57.402 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:00:57.498 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:00:57.506 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.92 seconds
+2025-11-17 22:00:57.507 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:00:57.507 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:00:57.508 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:00:58.678 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:00:58.678 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:00:58.678 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:00:58.678 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:00:59.956 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:00:59.957 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 36864
+2025-11-17 22:00:59.957 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:00.018 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:00.019 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:00.021 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.122 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.223 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.324 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.426 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.527 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.628 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.751 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.852 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:00.900 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:00.929 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.91 seconds
+2025-11-17 22:01:00.929 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:00.930 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:00.930 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:08.979 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:08.980 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:08.980 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:08.980 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:10.134 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:10.135 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 34816
+2025-11-17 22:01:10.135 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:10.160 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:10.161 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:10.168 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.269 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.370 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.471 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.572 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.672 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.773 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.873 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:10.942 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:10.996 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.83 seconds
+2025-11-17 22:01:10.996 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:10.996 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:10.997 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:12.756 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:12.756 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:12.756 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:12.756 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:13.908 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:13.909 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 34816
+2025-11-17 22:01:13.909 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:13.995 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:13.996 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:14.021 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.121 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.222 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.323 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.424 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.524 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.626 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.727 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:14.821 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:14.829 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.83 seconds
+2025-11-17 22:01:14.830 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:14.830 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:14.831 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:18.709 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:18.709 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:18.709 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:18.709 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:20.373 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:20.375 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 43008
+2025-11-17 22:01:20.375 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:20.464 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:20.465 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:20.479 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:20.581 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:20.681 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:20.781 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:20.883 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:20.983 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:21.085 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:21.186 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:21.280 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:21.303 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.84 seconds
+2025-11-17 22:01:21.304 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:21.304 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:21.304 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:21.525 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:21.526 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:21.526 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:21.526 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:22.677 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:22.677 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 34816
+2025-11-17 22:01:22.678 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:22.778 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:22.779 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:22.780 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:22.881 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:22.981 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:23.083 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:23.184 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:23.285 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:23.385 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:23.486 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:23.543 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:23.585 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.81 seconds
+2025-11-17 22:01:23.586 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:23.586 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:23.586 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:26.453 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:26.454 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:26.454 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:26.454 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:29.974 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:29.978 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 72704
+2025-11-17 22:01:29.978 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:30.035 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:30.036 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:30.048 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.149 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.250 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.351 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.451 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.553 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.654 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.755 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.856 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:30.935 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:30.987 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.95 seconds
+2025-11-17 22:01:30.987 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:30.987 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:30.988 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:33.683 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:33.684 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:33.684 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:33.684 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:35.669 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:35.670 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 48128
+2025-11-17 22:01:35.670 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:35.719 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:35.720 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:35.746 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:35.846 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:35.947 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:36.048 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:36.149 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:36.249 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:36.350 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:36.452 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:36.553 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:36.633 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:36.660 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.94 seconds
+2025-11-17 22:01:36.660 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:36.660 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:36.661 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:37.718 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:37.718 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:37.718 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:37.718 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:44.695 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:44.698 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 128000
+2025-11-17 22:01:44.698 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:44.747 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:44.748 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:44.752 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:44.854 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:44.954 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.055 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.156 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.257 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.358 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.459 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.560 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.661 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:45.755 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:45.767 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.02 seconds
+2025-11-17 22:01:45.768 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:45.768 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:45.768 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:48.213 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:48.213 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:48.213 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:48.213 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:01:53.976 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:01:53.979 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 108544
+2025-11-17 22:01:53.979 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:01:54.082 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:01:54.083 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:01:54.086 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.187 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.288 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.389 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.490 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.591 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.692 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.793 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.894 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:54.995 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:01:55.063 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:01:55.072 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.99 seconds
+2025-11-17 22:01:55.072 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:01:55.072 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:01:55.073 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:01:58.388 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:01:58.388 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:01:58.388 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:01:58.389 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:02:02.230 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:02:02.232 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 77824
+2025-11-17 22:02:02.233 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:02:02.300 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:02:02.301 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:02:02.303 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:02.404 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:02.505 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:02.607 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:02.708 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:02.809 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:02.910 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:03.011 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:03.112 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:03.213 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:03.239 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:02:03.252 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.95 seconds
+2025-11-17 22:02:03.252 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:02:03.252 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:02:03.253 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:02:05.880 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:02:05.880 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:02:05.880 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:02:05.881 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:02:12.787 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:02:12.791 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 126976
+2025-11-17 22:02:12.792 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:02:12.859 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:02:12.860 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:02:12.863 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:12.963 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.064 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.164 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.265 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.366 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.467 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.568 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.670 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.771 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:13.863 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:02:13.900 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 1.04 seconds
+2025-11-17 22:02:13.901 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:02:13.901 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:02:13.901 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:02:18.293 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2025-11-17 22:02:18.293 - RealTimeSTT: realtimestt - INFO - recording started
+2025-11-17 22:02:18.293 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2025-11-17 22:02:18.293 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2025-11-17 22:02:19.507 - RealTimeSTT: realtimestt - INFO - recording stopped
+2025-11-17 22:02:19.508 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 35840
+2025-11-17 22:02:19.509 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2025-11-17 22:02:19.537 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2025-11-17 22:02:19.538 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2025-11-17 22:02:19.539 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:19.640 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:19.741 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:19.842 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:19.943 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:20.043 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:20.144 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:20.245 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:20.346 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-11-17 22:02:20.429 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2025-11-17 22:02:20.466 - RealTimeSTT: realtimestt - DEBUG - Model tiny completed transcription in 0.93 seconds
+2025-11-17 22:02:20.466 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2025-11-17 22:02:20.466 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2025-11-17 22:02:20.467 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2025-11-17 22:02:25.282 - RealTimeSTT: realtimestt - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-11-17 22:02:25.282 - RealTimeSTT: realtimestt - DEBUG - Finishing recording thread
+2025-11-17 22:02:25.282 - RealTimeSTT: realtimestt - DEBUG - Receive from stdout pipe
+2025-11-17 22:02:25.282 - RealTimeSTT: realtimestt - INFO - None
+2025-11-17 22:02:25.288 - RealTimeSTT: realtimestt - DEBUG - Terminating reader process
+2025-11-17 22:02:26.023 - RealTimeSTT: realtimestt - DEBUG - Terminating transcription process
+2025-11-17 22:02:26.024 - RealTimeSTT: realtimestt - DEBUG - Finishing realtime thread
+2025-11-17 22:02:26.093 - RealTimeSTT: realtimestt - INFO - KeyboardInterrupt in text() method
