@@ -20,7 +20,6 @@ headers = {
 def guardar_respuesta(respuesta):
     file_path = "output.json"
     
-    # Si existe, carga lo que ya había
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             try:
@@ -30,7 +29,6 @@ def guardar_respuesta(respuesta):
     else:
         data = []
 
-    # Añadir nueva respuesta
     data.append(respuesta)
 
     with open(file_path, "w", encoding="utf-8") as f:
