@@ -1,6 +1,6 @@
 import requests
 import json
-from config import API_KEY
+from config import API_KEY_SONAR
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import re
@@ -13,12 +13,12 @@ CORS(app)
 url = "https://api.perplexity.ai/chat/completions" 
 
 headers = {
-    "Authorization": f"Bearer {API_KEY}",
+    "Authorization": f"Bearer {API_KEY_SONAR}",
     "Content-Type": "application/json"
 }
 
 def guardar_respuesta(respuesta):
-    file_path = "output.json"
+    file_path = "query.json"
     
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
@@ -66,9 +66,9 @@ def obtener_respuesta(query_str):
     }
 
     try:
-        response = requests.post(url, json=data, headers=headers)
+        response = requests.post(url, json=data, headers=headers)  #Envio petición a la api y me guardo la respuesta
 
-        if response.status_code == 200:
+        if response.status_code == 200: 
             parcial = response.json()
             contenido = parcial["choices"][0]["message"]["content"]
 
@@ -102,6 +102,25 @@ def obtener_respuesta(query_str):
         print("Error inesperado:", e)
         return error_random
 
+#### ADAPTAR ESTO, EHH YA NO ES UN CHATBOT!!! NO NECESITO MOSTRAR NADA POR PANTALLA!!!!
+def chat():
+    data = request.get_json()
+    query_str = data.get('query', '') #obtenemos la peticioón
+
+    if not query_str:
+        return jsonify({"error": "Consulta no proporcionada"}), 400
+
+    historial = cargar_memoria ()
+
+    #guardo también el historial de consulta del usuario
+    historial.append ({"user": query_str})
+
+    #guardamos también la respuesta
+    respuesta = obtener_respuesta(query_str) 
+
+    historial.append({"bot": respuesta})
+    guardar_memoria(historial)
+    return jsonify({"reply": respuesta})
 
 
 if __name__ == '__main__':
