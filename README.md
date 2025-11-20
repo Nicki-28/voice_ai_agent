@@ -13,7 +13,7 @@ This project is an **experimental intelligent voice agent** that allows users to
 - **Text-to-Speech (TTS) with Eleven Labs**: responds with natural-sounding voice.
 - **Adaptive personality**: the agent adapts its tone and style based on the person talking.
 - **Tone in responses**: each reply includes an emotional tone in brackets, e.g., `[calm]`, `[laughs nervously]`, `[excited]`.
-- **Real-time processing using silences**: the agent detects pauses and uses them to process responses with timeouts.
+- **Real-time processing using silences**: the agent detects pauses and uses them to process responses with timeouts (Silero VAD plugin integrated in RealTimeSTT)
 - **Simple memory**: interactions are stored to maintain conversational context.
 - **Direct backend integration**: the STT transcription is sent as text to the Sonar (Perplexity) API.
 
@@ -22,7 +22,7 @@ This project is an **experimental intelligent voice agent** that allows users to
 ## 🔹 Technologies
 
 - Python 3.10+
-- [RealTimeSTT](https://github.com/OpenAI/RealTimeSTT) for STT, wake word, and TTS
+- [RealTimeSTT](https://github.com/OpenAI/RealTimeSTT) for STT, 
 - Eleven Labs TTS API
 - Sonar (Perplexity API) for chatbot intelligence
 - FastAPI for backend (pure API, no frontend)
