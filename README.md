@@ -22,7 +22,7 @@ This project is an **experimental intelligent voice agent** that allows users to
 ## 🔹 Technologies
 
 - Python 3.10+
-- [RealTimeSTT](https://github.com/OpenAI/RealTimeSTT) for STT, 
+- [RealTimeSTT](https://github.com/OpenAI/RealTimeSTT) for STT
 - Eleven Labs TTS API
 - Sonar (Perplexity API) for chatbot intelligence
 - FastAPI for backend (pure API, no frontend)
