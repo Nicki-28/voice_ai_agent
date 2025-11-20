@@ -20,19 +20,26 @@ headers = {
 def guardar_respuesta(respuesta):
     file_path = "query.json"
     
+    # Inicializar data como lista
+    data = []
+    
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             try:
                 data = json.load(f)
+                # Si el JSON no es una lista, lo convertimos a lista
+                if not isinstance(data, list):
+                    data = [data]
             except json.JSONDecodeError:
                 data = []
-    else:
-        data = []
 
-    data.append(respuesta)
+    # Añadir la nueva respuesta como dict
+    data.append({"content": respuesta})
 
-    with open(file_path, "w", encoding="utf-8") as f:
+    output= "output.json"
+    with open(output, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
+
         
 
 def obtener_respuesta(query_str):
@@ -46,7 +53,8 @@ def obtener_respuesta(query_str):
                 "Your job is to reply in a useful and clear way, with a tone that reflects personality and emotions. "
                 "Your answers should be medium length and written in a colloquial manner. "
                 "If you cannot find reliable sources for this information, please say so explicitly. "
-                "Include the tone you are using in brackets at the end of sentences."
+                "Include the tone you are using in BRACKETS at the end of sentences."
+                "Make a clean paragraf, no tables, not pictures"
             )
         }
     ]
@@ -61,14 +69,14 @@ def obtener_respuesta(query_str):
     messages.append({"role": "user", "content": query_str})
 
     data = {
-        "model": "sonar-pro",
+        "model": "sonar",
         "messages": messages
     }
 
     try:
         response = requests.post(url, json=data, headers=headers)  #Envio petición a la api y me guardo la respuesta
 
-        if response.status_code == 200: 
+        if response.status_code == 200: #si no hay ningun problema recibiendo la respuesta
             parcial = response.json()
             contenido = parcial["choices"][0]["message"]["content"]
 
@@ -103,7 +111,7 @@ def obtener_respuesta(query_str):
         return error_random
 
 #### ADAPTAR ESTO, EHH YA NO ES UN CHATBOT!!! NO NECESITO MOSTRAR NADA POR PANTALLA!!!!
-def chat():
+def gestionar_respuesta():
     data = request.get_json()
     query_str = data.get('query', '') #obtenemos la peticioón
 
