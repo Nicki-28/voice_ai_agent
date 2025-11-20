@@ -38,7 +38,9 @@ def start_listening(timeout_silence=0.5):
     with AudioToTextRecorder(
             model="tiny",
             post_speech_silence_duration=0.2,
-            silero_deactivity_detection= True
+            silero_deactivity_detection= True,
+            webrtc_sensitivity= 3,
+            silero_use_onnx= False
         ) as recorder:
             while True:
                 recorder.text(text_detected)
