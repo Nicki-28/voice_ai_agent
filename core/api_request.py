@@ -98,7 +98,7 @@ def obtener_respuesta(query_str):
     except requests.exceptions.RequestException as e:
         error_conection = (
             "Oops [laughs nervously], I think there's no connection. "
-            "Do you mind checking your internet? Him and I are very dependant right now [jokingly]"
+            "Do you mind checking your internet? Him and I are in very dependant relationship right now [jokingly]"
         )
         guardar_respuesta(error_conection)
         print("Error de conexión:", e)
