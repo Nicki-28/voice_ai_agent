@@ -34,8 +34,11 @@ def is_silence(audio_chunk, threshold=0.08):
     return rms < threshold
 
 def cleaning_variables():
+    global palabra_detectada, query_list, ultimo_chunk
+    global silence_start_time, last_heard_time, start_time
     query_list.clear()
     palabra_detectada = False
+    ultimo_chunk = None
     silence_start_time = None
     last_heard_time = None
     start_time = None
@@ -43,6 +46,7 @@ def cleaning_variables():
     
 def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
     global palabra_detectada, query_list, ultimo_chunk
+    global silence_start_time, last_heard_time, start_time
 
     last_heard_time = None
     start_time = None
@@ -56,9 +60,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
         ultimo_chunk = audio_np
 
     def text_detected(text):
-        nonlocal last_heard_time, start_time
-        global palabra_detectada, query_list
-
+        global palabra_detectada, query_list, last_heard_time, start_time
         texto = text.strip().lower()
         current_time = time.time()
 
@@ -103,6 +105,9 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                             silence_start_time = current_time
                         elif current_time - silence_start_time > end_of_convo:
                             print("Silencio prolongado, terminando captura.")
+                            with open("query.json", "w", encoding="utf-8") as f:
+                                json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
+
                             yield " ".join(query_list)
                             cleaning_variables()
                             continue
@@ -114,31 +119,21 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                 # Timeout por silencio mínimo
                 if last_heard_time and (current_time - last_heard_time > timeout_silence):
                     print("Silencio detectado (timeout_silence), terminando captura.")
+                    with open("query.json", "w", encoding="utf-8") as f:
+                        json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
                     yield " ".join(query_list)
-                    cleaning_variables
+                    cleaning_variables()
                     continue
 
                 # Timeout absoluto
                 if start_time and (current_time - start_time > absolute_timeout):
                     print("Timeout absoluto alcanzado, terminando captura.")
+                    with open("query.json", "w", encoding="utf-8") as f:
+                            json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
                     yield " ".join(query_list)
-                    cleaning_variables
+                    cleaning_variables()
                     continue
 
 
     return " ".join(query_list)
 
-#Envio petición - reiniciamos 
-def cleaning_variables():
-    global palabra_detectada,silence_start_time,last_heard_time,start_time
-    query_list.clear()
-    palabra_detectada = False
-    silence_start_time = None
-    last_heard_time = None
-    start_time = None
-    
-
-# ejemplo de ejecución
-if __name__ == "__main__":
-    texto_final = start_listening()
-    print("Heard:", texto_final)
