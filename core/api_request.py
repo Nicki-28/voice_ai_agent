@@ -110,7 +110,6 @@ def obtener_respuesta(query_str):
         print("Error inesperado:", e)
         return error_random
 
-#### ADAPTAR ESTO, EHH YA NO ES UN CHATBOT!!! NO NECESITO MOSTRAR NADA POR PANTALLA!!!!
 def gestionar_respuesta():
     data = request.get_json()
     query_str = data.get('query', '') #obtenemos la peticioón
