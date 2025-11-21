@@ -6,6 +6,7 @@ import time
 palabra_detectada = False
 query_list = []
 
+
 # almacenar el último chunk recibido
 ultimo_chunk = None
 
@@ -114,7 +115,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                             
                     else:
                         silence_start_time = None
-                        last_heard_time = current_time
+                        
 
                 # Timeout por silencio mínimo
                 if last_heard_time and (current_time - last_heard_time > timeout_silence):
@@ -125,7 +126,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                     cleaning_variables()
                     continue
 
-                # Timeout absoluto
+                # Timeout absoluto - Reboot absoluto
                 if start_time and (current_time - start_time > absolute_timeout):
                     print("Timeout absoluto alcanzado, terminando captura.")
                     with open("query.json", "w", encoding="utf-8") as f:
