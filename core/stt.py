@@ -38,7 +38,6 @@ def cleaning_variables():
     global palabra_detectada, query_list, ultimo_chunk
     global silence_start_time, last_heard_time, start_time
     query_list.clear()
-    palabra_detectada = False
     ultimo_chunk = None
     silence_start_time = None
     last_heard_time = None
