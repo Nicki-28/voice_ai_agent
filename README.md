@@ -36,7 +36,7 @@ This project is an **experimental intelligent voice agent** that allows users to
 ---
 ## 🔹 Technologies
 
-Speak to the agent using the wake word, for example: "Hey Jarvis, what is the most famous singer in the world?" and it will respond in real-time, adapting to your personality, using silences to detec when you finish speaking, and maintaining conversation context.
+Speak to the agent using the wake word, for example: "Hey Jarvis, what is the most famous singer in the world?" and it will respond in real-time, adapting to your personality, using silences to detect when you finish speaking, and maintaining conversation context.
 
  ---
 ## 🔹 Improvements
