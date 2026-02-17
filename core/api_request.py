@@ -37,7 +37,7 @@ def guardar_respuesta(respuesta):
     data.append({"content": respuesta})
 
     output= "output.json"
-    with open(output, "w", encoding="utf-8") as f:
+    with open(output, "r", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
         
@@ -117,7 +117,7 @@ def gestionar_respuesta():
     if not query_str:
         return jsonify({"error": "Consulta no proporcionada"}), 400
 
-    historial = cargar_memoria ()
+    historial = cargar_memoria()
 
     #guardo también el historial de consulta del usuario
     historial.append ({"user": query_str})
