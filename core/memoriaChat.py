@@ -1,14 +1,13 @@
 import os
 import json
 
-MEMORY_PATH = "context.json"
 
 def cargar_memoria():
-    if not os.path.exists(MEMORY_PATH):
+    if not os.path.exists("output.json"):
         return []
-    with open(MEMORY_PATH, "r") as f:
+    with open("output.json", "r") as f:
         return json.load(f)
 
 def guardar_memoria(historial):
-    with open(MEMORY_PATH, "w") as f:
+    with open("context.json", "w") as f:
         json.dump(historial, f, indent=2)
