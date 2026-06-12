@@ -3,10 +3,22 @@ import json
 
 
 def cargar_memoria():
-    if not os.path.exists("data/output.json"):
-        return []
-    with open("data/output.json", "r") as f:
-        return json.load(f)
+    historial_completo = []
+    
+    # 1. Cargamos el primer archivo (si existe)
+    if os.path.exists("data/output.json"):
+        with open("data/output.json", "r") as f:
+            datos_output = json.load(f)
+            historial_completo.extend(datos_output) # Añadimos los datos a la lista
+            
+    # 2. Cargamos el segundo archivo (si existe)
+    if os.path.exists("data/context.json"):
+        with open("data/context.json", "r") as g:
+            datos_context = json.load(g)
+            historial_completo.extend(datos_context) # Sumamos estos datos a la misma lista
+            
+    # 3. Hacemos un ÚNICO return al final con todo junto
+    return historial_completo
 
 def guardar_memoria(historial):
     with open("data/context.json", "w") as f:
