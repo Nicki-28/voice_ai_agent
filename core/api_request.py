@@ -37,7 +37,7 @@ def guardar_respuesta(respuesta):
     data.append({"content": respuesta})
 
     output= "data/output.json"
-    with open(output, "r", encoding="utf-8") as f:
+    with open(output, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
         
@@ -60,7 +60,7 @@ def obtener_respuesta(query_str):
     ]
 
     # Añadir historial
-    for mensaje in historial[-6:]:
+    for mensaje in historial[-6:]: #solo recordará los últimos 6 mensajes, contexto suficiente
         if "user" in mensaje:
             messages.append({"role": "user", "content": mensaje["user"]})
         elif "bot" in mensaje:
