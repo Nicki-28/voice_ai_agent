@@ -1,6 +1,6 @@
 import requests
 import json
-from config import API_KEY_SONAR
+from config import API_KEY_GROQ
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import re
@@ -10,10 +10,10 @@ from core.memoriaChat import cargar_memoria, guardar_memoria
 app = Flask(__name__)
 CORS(app)
 
-url = "https://api.perplexity.ai/chat/completions" 
+url = "https://api.groq.com/openai/v1/chat/completions" 
 
 headers = {
-    "Authorization": f"Bearer {API_KEY_SONAR}",
+    "Authorization": f"Bearer {API_KEY_GROQ}",
     "Content-Type": "application/json"
 }
 
@@ -69,7 +69,7 @@ def obtener_respuesta(query_str):
     messages.append({"role": "user", "content": query_str})
 
     data = {
-        "model": "sonar",
+        "model": "openai/gpt-oss-20b",
         "messages": messages
     }
 
