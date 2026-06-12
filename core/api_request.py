@@ -18,7 +18,7 @@ headers = {
 }
 
 def guardar_respuesta(respuesta):
-    file_path = "query.json"
+    file_path = "data/query.json"
     
     # Inicializar data como lista
     data = []
@@ -36,7 +36,7 @@ def guardar_respuesta(respuesta):
     # Añadir la nueva respuesta como dict
     data.append({"content": respuesta})
 
-    output= "output.json"
+    output= "data/output.json"
     with open(output, "r", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
