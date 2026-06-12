@@ -1,6 +1,7 @@
 from core.stt import start_listening
 from core.api_request import obtener_respuesta
-from core.tts import sintetizar_voz
+from core.tts import sintetizar_voz_inworld_stream as sintetizar_voz
+
 
 
 def run():
