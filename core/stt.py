@@ -13,14 +13,14 @@ ultimo_chunk = None
 # tiempo en segundos para detectar si la conversación ha terminado
 end_of_convo = 7  # segundos de silencio antes de terminar
 
-def is_silence(audio_chunk, threshold=0.08):
+def is_silence(audio_chunk, threshold=0.08): #si el volumen es mejor que esto detectará silencio 
     """
     audio_chunk: numpy array en rango -1..1 o bytearray
     """
     if audio_chunk is None or len(audio_chunk) == 0:
         return True
 
-    # bytearray-int16
+    
     if isinstance(audio_chunk, (bytes, bytearray)):
         audio_chunk = np.frombuffer(audio_chunk, dtype=np.int16)
 
@@ -34,7 +34,9 @@ def is_silence(audio_chunk, threshold=0.08):
     rms = np.sqrt(np.mean(np.square(audio_chunk)))
     return rms < threshold
 
-def cleaning_variables():
+'''no volvemos a limpiar la palabra detectada para no tener que repetirla en el principio de la conversación si queremos que nos
+    escuche, sin embargo si nos conviene que se limpien los otros datos.'''
+def cleaning_variables(): 
     global palabra_detectada, query_list, ultimo_chunk
     global silence_start_time, last_heard_time, start_time
     query_list.clear()
@@ -56,7 +58,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
 
     def on_chunk(audio_np):
         global ultimo_chunk
-        # el chunk para analizar silencio en el bucle principal
+        # el chunk para analizar silencio en el bucle principal, aqui guardamos lo que se ha escuchado
         ultimo_chunk = audio_np
 
     def text_detected(text):
@@ -77,7 +79,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
             query_list.append(texto)
             last_heard_time = current_time
 
-        with open("query.json", "w", encoding="utf-8") as f:
+        with open("data/query.json", "w", encoding="utf-8") as f: # DEBUG: esto es lo que se le pasa a la api
             json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
 
     with AudioToTextRecorder(
@@ -91,6 +93,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
             on_recorded_chunk=on_chunk
         ) as recorder:
 
+        
         while True:
             recorder.text(text_detected)
 
@@ -105,7 +108,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                             silence_start_time = current_time
                         elif current_time - silence_start_time > end_of_convo:
                             print("Silencio prolongado, terminando captura.")
-                            with open("query.json", "w", encoding="utf-8") as f:
+                            with open("data/query.json", "w", encoding="utf-8") as f:
                                 json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
 
                             yield " ".join(query_list)
@@ -119,7 +122,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                 # Timeout por silencio mínimo
                 if last_heard_time and (current_time - last_heard_time > timeout_silence):
                     print("Silencio detectado (timeout_silence), terminando captura.")
-                    with open("query.json", "w", encoding="utf-8") as f:
+                    with open("data/query.json", "w", encoding="utf-8") as f:
                         json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
                     yield " ".join(query_list)
                     cleaning_variables()
@@ -128,7 +131,7 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                 # Timeout absoluto - Reboot absoluto
                 if start_time and (current_time - start_time > absolute_timeout):
                     print("Timeout absoluto alcanzado, terminando captura.")
-                    with open("query.json", "w", encoding="utf-8") as f:
+                    with open("data/query.json", "w", encoding="utf-8") as f:
                             json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
                     yield " ".join(query_list)
                     cleaning_variables()
