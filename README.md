@@ -3,15 +3,15 @@
 Because typing is so 2022. 
 
 A modular, ultra-fast voice assistant designed to maintain fluid, natural, and real-time conversations. This project integrates speech-to-text (STT), ultra-low latency natural language processing (LLM), and bidirectional streaming text-to-speech (TTS) so you can finally feel like Tony Stark.
----
 
-## ✨ Key Features
 
-* **Active Listening (It actually listens):** Uses `RealtimeSTT` to detect when you speak, transcribe your voice instantly, and elegantly cut the recording as soon as you finish your sentence. 
+##  Key Features
+
+* **Active Listening (It actually listens):** Uses `RealtimeSTT` to detect when you speak, transcribe your voice instantly, and elegantly cut the recording as soon as you finish your sentence to process it. 
 * **Big Brain Energy:** Powered by **Groq** to generate coherent, personality-driven responses at a fast speed.
 * **Memory:** Saves the conversation context in a local file (`context.json`) so it actually remembers what you talked about 5 minutes ago (unlike most humans).
 * **Real-Time Voice (Zero Latency):** We ditched the slow engines and hooked up **Inworld AI**. It injects audio chunks directly into the `mpv` player via command line, meaning Jarvis starts speaking practically before he finishes thinking.
-
+  
 ---
 
 ## 🛠️ Tech Stack
@@ -52,7 +52,7 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
 
 ---
 
-## 💻 Usage
+##  Usage
 
 Put on your Iron Man suit and run the main module from the root of the project. Jarvis will automatically start listening to your microphone:
 
