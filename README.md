@@ -1,45 +1,67 @@
-# Voice AI Agent 🤖
+# 🎙️ Voice AI Agent (a.k.a. Budget Jarvis)
 
-This project is an **experimental intelligent voice agent** that allows users to interact with a personal assistant called *Jarvis* via voice (can you tell i'm a marvel fan? ahah). The agent converts speech to text, processes the request through an AI backend, and responds using Text-to-Speech.
+Because typing is so 2022. 
 
-⚠️ **Super experimental:** this is a prototype to test ideas quickly. I used **Eleven Labs TTS** for voice output, **Sonar (Perplexity API)** for the chatbot backend, everything is **Dockerized**, and it's a **pure backend setup** (no Flask frontend). Highly improvable—just a sandbox of ideas that made sense in my head.
+A modular, ultra-fast voice assistant designed to maintain fluid, natural, and real-time conversations. This project integrates speech-to-text (STT), ultra-low latency natural language processing (LLM), and bidirectional streaming text-to-speech (TTS) so you can finally feel like Tony Stark.
+---
+
+## ✨ Key Features
+
+* **Active Listening (It actually listens):** Uses `RealtimeSTT` to detect when you speak, transcribe your voice instantly, and elegantly cut the recording as soon as you finish your sentence. 
+* **Big Brain Energy:** Powered by **Groq** to generate coherent, personality-driven responses at a fast speed.
+* **Memory:** Saves the conversation context in a local file (`context.json`) so it actually remembers what you talked about 5 minutes ago (unlike most humans).
+* **Real-Time Voice (Zero Latency):** We ditched the slow engines and hooked up **Inworld AI**. It injects audio chunks directly into the `mpv` player via command line, meaning Jarvis starts speaking practically before he finishes thinking.
 
 ---
 
-## 🔹 Features
+## 🛠️ Tech Stack
 
-- **Wake word activation**: the agent only listens when a wake word is spoken, e.g., `"Hey Jarvis!"`.
-- **Real-time Speech-to-Text (STT)**: transcribes user speech as it happens.
-- **Text-to-Speech (TTS) with Eleven Labs**: responds with natural-sounding voice.
-- **Adaptive personality**: the agent adapts its tone and style based on the person talking.
-- **Tone in responses**: each reply includes an emotional tone in brackets, e.g., `[calm]`, `[laughs nervously]`, `[excited]`.
-- **Real-time processing using silences**: the agent detects pauses and uses them to process responses with timeouts (Silero VAD plugin integrated in RealTimeSTT)
-- **Simple memory**: interactions are stored to maintain conversational context.
-- **Direct backend integration**: the STT transcription is sent as text to the Sonar (Perplexity) API.
+* **Language:** Python 3.11+ 
+* **Ears (STT):** RealtimeSTT
+* **Brain (LLM):** Groq API
+* **Mouth (TTS):** Inworld AI API (HTTP Streaming)
+* **Vocal Cords (Audio Player):** `mpv` (for real-time raw audio decoding without blowing out your speakers)
 
 ---
 
-## 🔹 Technologies
+## 🚀 Prerequisites
 
-- Python 3.10+
-- [RealTimeSTT](https://github.com/OpenAI/RealTimeSTT) for STT
-- Eleven Labs TTS API
-- Sonar (Perplexity API) for chatbot intelligence
-- FastAPI for backend (pure API, no frontend)
-- Docker for containerization
-- JSON for data exchange
+Before waking up the AI on your local machine (Mac/Linux), make sure you have the following tools installed so it doesn't sound like a broken dial-up modem:
+
+1. Install the background audio player:
+   `brew install mpv`
+2. Install Node.js and the Inworld CLI (optional, but highly recommended for debugging voices like a pro):
+   `sudo npm install -g @inworld/cli`
 
 ---
-- To use the agent, clone the repository (`git clone https://github.com/Nicki-28/voice_ai_agent.git`)
-- install dependencies (`pip install -r requirements.txt`), and run it with Docker (`docker compose up`). 
- 
+
+## 📦 Installation & Setup
+
+1. Clone this repository and bring it to your local machine:
+   `git clone https://github.com/Nicki-28/voice_ai_agent.git`
+2. Navigate to the base:
+   `cd voice_ai_agent`
+3. Create and activate a virtual environment:
+   `python3 -m venv .venv`
+   `source .venv/bin/activate`
+4. Install dependencies:
+   `pip install -r requirements.txt`
+5. Configure your credentials by creating a `.env` file or setting up `config.py` with your keys. (Please, do not upload this to GitHub):
+   `INWORLD_API_KEY="your_base64_key_with_write_permissions"`
+   `GROQ_API_KEY="your_groq_api_key"`
+
 ---
-## 🔹 Technologies
 
-Speak to the agent using the wake word, for example: "Hey Jarvis, what is the most famous singer in the world?" and it will respond in real-time, adapting to your personality, using silences to detect when you finish speaking, and maintaining conversation context.
+## 💻 Usage
 
- ---
-## 🔹 Improvements
- Potential improvements include support for multiple wake words, advanced memory and context handling, external TTS voices, optimizing response time, and adding a proper frontend interface.
+Put on your Iron Man suit and run the main module from the root of the project. Jarvis will automatically start listening to your microphone:
 
+`python3 main.py`
 
+---
+
+## 🗺️ Roadmap / Next Steps
+
+* Create a simple visual interface (Frontend) using Streamlit or Gradio (so we have something pretty to look at).
+* Implement concurrency (async/threading) to allow interrupting Jarvis while he speaks (because sometimes AI talks too much).
+* Containerize the final version using Docker.
