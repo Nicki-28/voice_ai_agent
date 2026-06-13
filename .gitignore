@@ -9,3 +9,7 @@ __pycache__/
 .json
 .log
 realtimesst.log
+
+context.json
+output.json
+query.json
