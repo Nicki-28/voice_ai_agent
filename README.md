@@ -45,8 +45,8 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
    `python3 -m venv .venv`
    `source .venv/bin/activate`
 4. Install dependencies:
-   `pip install -r requirements.txt`
-5. Configure your credentials by creating a `.env` file or setting up `config.py` with your keys. (Please, do not upload this to GitHub):
+   `pip install -r requirements.txt`👀👀
+5. Configure your credentials by creating a `.env` file or setting up `config.py` with your keys. (Please, do not upload this to GitHub 👀):
    `INWORLD_API_KEY="your_base64_key_with_write_permissions"`
    `GROQ_API_KEY="your_groq_api_key"`
 
@@ -54,7 +54,7 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
 
 ##  Usage
 
-Put on your Iron Man suit and run the main module from the root of the project. Jarvis will automatically start listening to your microphone:
+Put on your Iron Man suit and run the main module from the root of the project. Jarvis will automatically start listening to your microphone (remember the key word "Hey jarvis"):
 
 `python3 main.py`
 
