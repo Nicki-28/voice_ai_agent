@@ -45,7 +45,7 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
    `python3 -m venv .venv`
    `source .venv/bin/activate`
 4. Install dependencies:
-   `pip install -r requirements.txt`👀👀
+   `pip install -r requirements.txt`
 5. Configure your credentials by creating a `.env` file or setting up `config.py` with your keys. (Please, do not upload this to GitHub 👀):
    `INWORLD_API_KEY="your_base64_key_with_write_permissions"`
    `GROQ_API_KEY="your_groq_api_key"`
