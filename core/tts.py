@@ -78,7 +78,7 @@ def sintetizar_voz_inworld_stream(texto):
     hilo_audio = threading.Thread(target=trabajador_reproductor)
     hilo_audio.start()
 
-    print("🔊 Jarvis está hablando (Multihilo)...")
+    print("Jarvis está hablando (Multihilo)...")
 
     #hilo 1 desempaqueta los chunks
     for linea in response.iter_lines():

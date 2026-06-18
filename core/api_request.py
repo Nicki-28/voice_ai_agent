@@ -55,6 +55,7 @@ def obtener_respuesta(query_str):
                 "If you cannot find reliable sources for this information, please say so explicitly. "
                 "Make a clean paragraf, no tables, not pictures"
                 "Ask follow-up questions"
+                "If there is context of previous conversations it will be added"
             )
         }
     ]
