@@ -11,7 +11,7 @@ query_list = []
 ultimo_chunk = None
 
 # tiempo en segundos para detectar si la conversación ha terminado
-end_of_convo = 7  # segundos de silencio antes de terminar
+end_of_convo = 3  # segundos de silencio antes de terminar
 
 def is_silence(audio_chunk, threshold=0.08): #si el volumen es mejor que esto detectará silencio 
     """

@@ -17,7 +17,7 @@ def cargar_memoria():
             datos_context = json.load(g)
             historial_completo.extend(datos_context) # Sumamos estos datos a la misma lista
             
-    # 3. Hacemos un ÚNICO return al final con todo junto
+    # 3. return último
     return historial_completo
 
 def guardar_memoria(historial):
