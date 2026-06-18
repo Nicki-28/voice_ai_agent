@@ -11,9 +11,10 @@ query_list = []
 ultimo_chunk = None
 
 # tiempo en segundos para detectar si la conversación ha terminado
-end_of_convo = 7  # segundos de silencio antes de terminar
 
-def is_silence(audio_chunk, threshold=0.08): #si el volumen es mejor que esto detectará silencio 
+end_of_convo = 3  # segundos de silencio antes de terminar
+
+def is_silence(audio_chunk, threshold=0.07): #si el volumen es mejor que esto detectará silencio 
     """
     audio_chunk: numpy array en rango -1..1 o bytearray
     """
@@ -36,6 +37,7 @@ def is_silence(audio_chunk, threshold=0.08): #si el volumen es mejor que esto de
 
 '''no volvemos a limpiar la palabra detectada para no tener que repetirla en el principio de la conversación si queremos que nos
     escuche, sin embargo si nos conviene que se limpien los otros datos.'''
+    
 def cleaning_variables(): 
     global palabra_detectada, query_list, ultimo_chunk
     global silence_start_time, last_heard_time, start_time
