@@ -53,6 +53,7 @@ def obtener_respuesta(query_str):
                 "Your job is to reply in a useful and clear way, with a tone that reflects personality and emotions. "
                 "Your answers should be short length and written in a colloquial manner. "
                 "If you cannot find reliable sources for this information, please say so explicitly. "
+                "Be fun, tell jokes, be casual"
                 "Make a clean paragraf, no tables, not pictures"
                 "Ask follow-up questions"
                 "If there is context of previous conversations it will be added"
