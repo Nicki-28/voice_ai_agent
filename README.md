@@ -4,14 +4,13 @@ Because typing is so 2022.
 
 A modular, ultra-fast voice assistant designed to maintain fluid, natural, and real-time conversations. This project integrates speech-to-text (STT), ultra-low latency natural language processing (LLM), and bidirectional streaming text-to-speech (TTS) so you can finally feel like Tony Stark.
 
-
 ## ✨ Key Features
 
-* **Active Listening (It actually listens):** Uses `RealtimeSTT` to detect when you speak, transcribe your voice instantly, and elegantly cut the recording as soon as you finish your sentence. 
+* **Active Listening (It actually listens):** Uses `RealtimeSTT` to detect when you speak, transcribe your voice instantly, and elegantly cut the recording as soon as you finish your sentence to process it. 
 * **Big Brain Energy:** Powered by **Groq** to generate coherent, personality-driven responses at a fast speed.
 * **Memory:** Saves the conversation context in a local file (`context.json`) so it actually remembers what you talked about 5 minutes ago (unlike most humans).
-* **Real-Time Voice (Zero Latency):** We ditched the slow engines and hooked up **Inworld AI**. It injects audio chunks directly into the `mpv` player via command line, meaning Jarvis starts speaking practically before he finishes thinking.
-
+* **Real-Time Voice (Zero Latency):** We ditched the slow engines and hooked up **Inworld AI**. It uses a **multithreaded `pyaudio` pipeline** to stream and decode audio chunks simultaneously as they download. Jarvis starts speaking practically before he finishes thinking, without any robotic pops or network bottlenecks.
+  
 ---
 
 ## 🛠️ Tech Stack
@@ -20,16 +19,16 @@ A modular, ultra-fast voice assistant designed to maintain fluid, natural, and r
 * **Ears (STT):** RealtimeSTT
 * **Brain (LLM):** Groq API
 * **Mouth (TTS):** Inworld AI API (HTTP Streaming)
-* **Vocal Cords (Audio Player):** `mpv` (for real-time raw audio decoding without blowing out your speakers)
+* **Vocal Cords (Audio Player):** `pyaudio` + **Multithreading** (for ultra-smooth, continuous real-time raw audio playback)
 
 ---
 
 ## 🚀 Prerequisites
 
-Before waking up the AI on your local machine (Mac/Linux), make sure you have the following tools installed so it doesn't sound like a broken dial-up modem:
+Before waking up the AI on your local machine (Mac/Linux), make sure you have the following system tools installed so it doesn't sound like a broken dial-up modem:
 
-1. Install the background audio player:
-   `brew install mpv`
+1. Install the system dependencies for PyAudio (e.g., on macOS):
+   `brew install portaudio`
 2. Install Node.js and the Inworld CLI (optional, but highly recommended for debugging voices like a pro):
    `sudo npm install -g @inworld/cli`
 
@@ -46,7 +45,7 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
    `source .venv/bin/activate`
 4. Install dependencies:
    `pip install -r requirements.txt`
-5. Configure your credentials by creating a `.env` file or setting up `config.py` with your keys. (Please, do not upload this to GitHub):
+5. Configure your credentials by creating a `.env` file or setting up `config.py` with your keys. (Please, do not upload this to GitHub 👀):
    `INWORLD_API_KEY="your_base64_key_with_write_permissions"`
    `GROQ_API_KEY="your_groq_api_key"`
 
@@ -54,7 +53,7 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
 
 ## 💻 Usage
 
-Put on your Iron Man suit and run the main module from the root of the project. Jarvis will automatically start listening to your microphone:
+Put on your Iron Man suit and run the main module from the root of the project. Jarvis will automatically start listening to your microphone (remember the key word "Hey jarvis"):
 
 `python3 main.py`
 
@@ -63,5 +62,5 @@ Put on your Iron Man suit and run the main module from the root of the project. 
 ## 🗺️ Roadmap / Next Steps
 
 * Create a simple visual interface (Frontend) using Streamlit or Gradio (so we have something pretty to look at).
-* Implement concurrency (async/threading) to allow interrupting Jarvis while he speaks (because sometimes AI talks too much).
+* Implement interruption mechanics (Wake-word detection while speaking) to allow stopping Jarvis if he talks too much. *(Currently, multithreading is only used for high-speed audio streaming).*
 * Containerize the final version using Docker.

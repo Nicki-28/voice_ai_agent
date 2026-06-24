@@ -25,8 +25,8 @@ def sintetizar_voz_inworld_stream(texto):
 
     payload = {
         "text": texto,
-        "voiceId": "Ashley",
-        "modelId": "inworld-tts-1.5-mini",
+        "voiceId": "Felix",
+        "modelId": "inworld-tts-2",
         "audioConfig": {
             "audioEncoding": "LINEAR16",
             "sampleRateHertz": 48000
@@ -55,7 +55,7 @@ def sintetizar_voz_inworld_stream(texto):
         while True:
             chunk = cesta_audio.get()
 
-            if chunk is None:  #
+            if chunk is None:  
                 break
 
             buffer_interno += chunk
@@ -78,7 +78,7 @@ def sintetizar_voz_inworld_stream(texto):
     hilo_audio = threading.Thread(target=trabajador_reproductor)
     hilo_audio.start()
 
-    print("🔊 Jarvis está hablando (Multihilo)...")
+    print("Jarvis está hablando (Multihilo)...")
 
     #hilo 1 desempaqueta los chunks
     for linea in response.iter_lines():
