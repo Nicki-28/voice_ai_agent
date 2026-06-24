@@ -3,7 +3,7 @@
 Because typing is so 2022. 
 
 A modular, ultra-fast voice assistant designed to maintain fluid, natural, and real-time conversations. This project integrates speech-to-text (STT), ultra-low latency natural language processing (LLM), and bidirectional streaming text-to-speech (TTS) so you can finally feel like Tony Stark.
----
+
 
 ## ✨ Key Features
 
