@@ -5,7 +5,10 @@ import time
 
 palabra_detectada = False
 query_list = []
-
+#absolute silence
+waiting_for_more= False
+idle_timeout=10.0 # de inactividad por silencio
+idle_start=0.0
 
 # almacenar el último chunk recibido
 ultimo_chunk = None
@@ -14,7 +17,7 @@ ultimo_chunk = None
 
 end_of_convo = 3  # segundos de silencio antes de terminar
 
-def is_silence(audio_chunk, threshold=0.07): #si el volumen es mejor que esto detectará silencio 
+def is_silence(audio_chunk, threshold=0.05): #si el volumen es mejor que esto detectará silencio 
     """
     audio_chunk: numpy array en rango -1..1 o bytearray
     """
@@ -46,11 +49,12 @@ def cleaning_variables():
     silence_start_time = None
     last_heard_time = None
     start_time = None
+    waiting_for_more= False
     
     
-def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
-    global palabra_detectada, query_list, ultimo_chunk
-    global silence_start_time, last_heard_time, start_time
+def start_listening(timeout_silence=0.2, absolute_timeout=5.0):
+    global palabra_detectada, query_list, ultimo_chunk, waiting_for_more
+    global silence_start_time, last_heard_time, start_time,idle_start
 
     last_heard_time = None
     start_time = None
@@ -109,12 +113,14 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                         if silence_start_time is None:
                             silence_start_time = current_time
                         elif current_time - silence_start_time > end_of_convo:
-                            print("Silencio prolongado, terminando captura.")
+                            print("Silencio prolongado, terminando captura.") #esto es mid query
                             with open("data/query.json", "w", encoding="utf-8") as f:
                                 json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
 
                             yield " ".join(query_list)
                             cleaning_variables()
+                            waiting_for_more= True #inicialmente asumimos que el usuario va a seguir hablando
+                            idle_start= time.time() #empezamos a contar por si nos encontramos con un timeout absoluto
                             continue
                             
                     else:
@@ -123,11 +129,13 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
 
                 # Timeout por silencio mínimo
                 if last_heard_time and (current_time - last_heard_time > timeout_silence):
-                    print("Silencio detectado (timeout_silence), terminando captura.")
+                    print("Pausa tras hablar, gestionamos la respuesta.")
                     with open("data/query.json", "w", encoding="utf-8") as f:
                         json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
                     yield " ".join(query_list)
                     cleaning_variables()
+                    waiting_for_more=True
+                    idle_start= time.time()
                     continue
 
                 # Timeout absoluto - Reboot absoluto
@@ -137,8 +145,17 @@ def start_listening(timeout_silence=0.2, absolute_timeout=10.0):
                             json.dump({"content": " ".join(query_list)}, f, indent=4, ensure_ascii=False)
                     yield " ".join(query_list)
                     cleaning_variables()
+                    waiting_for_more=True
+                    idle_start= time.time()
                     continue
 
+                #escucha pasiva
+                if waiting_for_more:
+                     current_time = time.time()
+                if current_time - idle_start > idle_timeout:
+                    print("Sin actividad, volviendo a esperar wake word.")
+                    palabra_detectada = False     
+                    waiting_for_more = False
 
     return " ".join(query_list)
 
