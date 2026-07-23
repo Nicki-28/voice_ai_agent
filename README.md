@@ -4,7 +4,7 @@ Because typing is so 2022.
 
 A modular, ultra-fast voice assistant designed to maintain fluid, natural, and real-time conversations. This project integrates speech-to-text (STT), ultra-low latency natural language processing (LLM), and bidirectional streaming text-to-speech (TTS) so you can finally feel like Tony Stark.
 
-## ✨ Key Features
+##  Key Features
 
 * **Active Listening (It actually listens):** Uses `RealtimeSTT` to detect when you speak, transcribe your voice instantly, and elegantly cut the recording as soon as you finish your sentence to process it. 
 * **Big Brain Energy:** Powered by **Groq** to generate coherent, personality-driven responses at a fast speed.
@@ -13,7 +13,7 @@ A modular, ultra-fast voice assistant designed to maintain fluid, natural, and r
   
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Language:** Python 3.11+ 
 * **Ears (STT):** RealtimeSTT
@@ -23,7 +23,7 @@ A modular, ultra-fast voice assistant designed to maintain fluid, natural, and r
 
 ---
 
-## 🚀 Prerequisites
+##  Prerequisites
 
 Before waking up the AI on your local machine (Mac/Linux), make sure you have the following system tools installed so it doesn't sound like a broken dial-up modem:
 
@@ -34,7 +34,7 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 1. Clone this repository and bring it to your local machine:
    `git clone https://github.com/Nicki-28/voice_ai_agent.git`
@@ -51,7 +51,7 @@ Before waking up the AI on your local machine (Mac/Linux), make sure you have th
 
 ---
 
-## 💻 Usage
+##  Usage
 
 Put on your Iron Man suit and run the main module from the root of the project. Jarvis will automatically start listening to your microphone (remember the key word "Hey jarvis"):
 
@@ -59,7 +59,7 @@ Put on your Iron Man suit and run the main module from the root of the project. 
 
 ---
 
-## 🗺️ Roadmap / Next Steps
+##  Roadmap / Next Steps
 
 * Create a simple visual interface (Frontend) using Streamlit or Gradio (so we have something pretty to look at).
 * Implement interruption mechanics (Wake-word detection while speaking) to allow stopping Jarvis if he talks too much. *(Currently, multithreading is only used for high-speed audio streaming).*
